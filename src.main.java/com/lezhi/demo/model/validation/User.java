@@ -1,10 +1,12 @@
 package com.lezhi.demo.model.validation;
 
-import java.io.Serializable;
 
-public class User implements Serializable{
+import com.lezhi.demo.model.util.Table;
 
-	private static final long serialVersionUID = 1L;
+
+@Table(value = "sys_user")
+public class User{
+
 	private String id;
     private String userName;
     private String password;
